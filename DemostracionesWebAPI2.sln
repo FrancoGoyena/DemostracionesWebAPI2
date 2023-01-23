@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiLibros", "WebApiLibros\WebApiLibros.csproj", "{C8B1ABB7-77BC-48CD-B9D1-8E5F6336E00A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiLibros", "WebApiLibros\WebApiLibros.csproj", "{C8B1ABB7-77BC-48CD-B9D1-8E5F6336E00A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiNorthwind", "WebApiNorthwind\WebApiNorthwind.csproj", "{5E2F1D5C-B63A-4954-A0F7-6C69F6E5D6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiPubs", "WebApiPubs\WebApiPubs.csproj", "{A95FB6C7-7722-4E8A-A840-FE8D164AC590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C8B1ABB7-77BC-48CD-B9D1-8E5F6336E00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8B1ABB7-77BC-48CD-B9D1-8E5F6336E00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8B1ABB7-77BC-48CD-B9D1-8E5F6336E00A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2F1D5C-B63A-4954-A0F7-6C69F6E5D6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2F1D5C-B63A-4954-A0F7-6C69F6E5D6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2F1D5C-B63A-4954-A0F7-6C69F6E5D6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2F1D5C-B63A-4954-A0F7-6C69F6E5D6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A95FB6C7-7722-4E8A-A840-FE8D164AC590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95FB6C7-7722-4E8A-A840-FE8D164AC590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95FB6C7-7722-4E8A-A840-FE8D164AC590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95FB6C7-7722-4E8A-A840-FE8D164AC590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
