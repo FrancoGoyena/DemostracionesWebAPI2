@@ -54,8 +54,6 @@ namespace WebApiLibros.Controllers
             return Ok();
         }
 
-        //UPDATE
-        //PUT api/autor/2
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Libro libro)
         {
@@ -67,7 +65,7 @@ namespace WebApiLibros.Controllers
             context.SaveChanges();
             return Ok();
         }
-        //DELETE api/autor/1
+
         [HttpDelete("{id}")]
         public ActionResult<Libro> Delete(int id)
         {
