@@ -24,11 +24,11 @@ namespace WebApiLibros.Controllers
             return context.Libros.ToList();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("listado/{id}")]
         public ActionResult<IEnumerable<Libro>> GetByIdTodos(int id)
         {
             List<Libro> libro = (from a in context.Libros
-                           where a.AutorId == id
+                           where a.Id == id
                            select a).ToList();
             return libro;
         }
@@ -59,7 +59,7 @@ namespace WebApiLibros.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Libro libro)
         {
-            if (id != libro.AutorId)
+            if (id != libro.Id)
             {
                 return BadRequest();
             }
@@ -72,7 +72,7 @@ namespace WebApiLibros.Controllers
         public ActionResult<Libro> Delete(int id)
         {
             var libro = (from a in context.Libros
-                         where a.AutorId == id
+                         where a.Id == id
                          select a).SingleOrDefault();
             if (libro == null)
             {

@@ -7,6 +7,7 @@ namespace WebApiLibros.Models
     [Table("Libro")]
     public class Libro
     {
+        [Key]
         public int Id { get; set; }
         [Required]
         [Column(TypeName="varchar(50)")]
