@@ -59,7 +59,7 @@ namespace WebApiPubs.Controllers
         }
         [HttpDelete("{id}")]
         public ActionResult<Publisher> Delete(string id)
-        {//la habitacion eliminada se lo mandamos al cliente.
+        {//el publisher eliminado se lo mandamos al cliente.
             var publisher = (from a in context.Publishers
                               where a.PubId == id
                               select a).SingleOrDefault();
