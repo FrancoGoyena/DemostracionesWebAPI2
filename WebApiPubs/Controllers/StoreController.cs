@@ -99,11 +99,11 @@ namespace WebApiPubs.Controllers
 
         //GET api/store/5
         [HttpGet("ciudad/{city}")]
-        public ActionResult<Store> GetByCityState(string city)
+        public ActionResult<IEnumerable<Store>> GetByCityState(string city)
         {
-            Store store = (from a in context.Stores
-                           where a.City == city
-                           select a).SingleOrDefault();
+            List<Store> store = (from a in context.Stores
+                                 where a.City == city
+                                 select a).ToList();
             return store;
         }
     }
