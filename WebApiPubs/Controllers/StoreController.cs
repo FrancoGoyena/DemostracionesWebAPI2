@@ -77,7 +77,7 @@ namespace WebApiPubs.Controllers
             return store;
         }
 
-        //GET api/store/5
+        //GET api/store/nombre/name
         [HttpGet("nombre/{name}")]
         public ActionResult<Store> GetByName(string name)
         {
@@ -87,7 +87,7 @@ namespace WebApiPubs.Controllers
             return store;
         }
 
-        //GET api/store/5
+        //GET api/store/zip/zip
         [HttpGet("zip/{zip}")]
         public ActionResult<Store> GetByZip(string zip)
         {
@@ -97,12 +97,12 @@ namespace WebApiPubs.Controllers
             return store;
         }
 
-        //GET api/store/5
-        [HttpGet("ciudad/{city}")]
-        public ActionResult<IEnumerable<Store>> GetByCityState(string city)
+        //GET api/store/listado/citystate
+        [HttpGet("listado/{city}/{state}")]
+        public ActionResult<IEnumerable<Store>> GetByCityState(string city, string state)
         {
             List<Store> store = (from a in context.Stores
-                                 where a.City == city
+                                 where a.City == city && a.State == state
                                  select a).ToList();
             return store;
         }
